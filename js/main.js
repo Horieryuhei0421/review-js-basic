@@ -48,4 +48,20 @@
     close.click();
   });
 
+
+  // ハンバーガー
+  const hopen = document.getElementById('hopen');
+  const overlay = document.querySelector('.overlay');
+  const hclose = document.getElementById('hclose');
+
+  hopen.addEventListener('click', () => {
+    overlay.classList.add('show');
+    hopen.classList.add('hide');
+  });
+
+  hclose.addEventListener('click', () => {
+    overlay.classList.remove('show');
+    hopen.classList.remove('hide');
+  });
+
 }
